@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SegiEmpatController;
-
+use App\Http\Controllers\MstPangkatController;
 
 /*
 |--------------------------------------------------------------------------
@@ -103,3 +103,5 @@ Route::post('segi-empat/hasil',
 Route::post('segi-empat/hasilBalok',
  'App\Http\Controllers\SegiEmpatController@hasilBalok')
  ->name('segi-empat.hasilBalok');
+
+ Route::resource('/mst-pangkat',MstPangkatController::class);

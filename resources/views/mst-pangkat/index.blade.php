@@ -49,7 +49,7 @@
                                     <td>{{ $mstPangkats->nama_pangkat }}</td>
                                     <td>{{ $mstPangkats->pangkat_gol }}</td>
                                     <td>
-                                        <form action="{{ route('mst-pangkat.destroy, $mstPangkats->id) }}"
+                                        <form action="{{ route('mst-pangkat.destroy', $mstPangkats->id) }}"
                                             method="POST">
                                             <a class="btn btn-sm btn-primary "
                                                 href="{{ route('mst-pangkat.show', $mstPangkats->id) }}">

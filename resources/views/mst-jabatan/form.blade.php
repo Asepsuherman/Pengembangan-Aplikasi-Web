@@ -1,6 +1,5 @@
 <div class="box box-info padding-1">
     <div class="box-body">
-
         <div class="form-group">
             {{ Form::label('nama_jabatan') }}
             {{ Form::text('nama_jabatan', $mstJabatan->nama_jabatan,
@@ -22,3 +21,5 @@
                 <button type="submit" class="btn btn-primary">Simpan</button>
             </div>
         </div>
+    </div>
+</div>
